@@ -1,3 +1,10 @@
 {
-  "title": "สวัสดีชาวโลก!"
+  "header": {
+    "title": "React Profiler and Hooks.",
+    "description": "ติดตามและเพิ่มประสิทธิภาพ React Applications เพื่อสร้างเว็บไซต์ที่เร็วและจัดการได้ง่ายขึ้น",
+    "actions": {
+      "start": "เริ่มเลย",
+      "github": "ดูที่ GitHub"
+    }
+  }
 }

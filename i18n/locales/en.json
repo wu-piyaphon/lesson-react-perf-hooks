@@ -1,3 +1,10 @@
 {
-  "title": "Hello world!"
+  "header": {
+    "title": "React Profiler and Hooks.",
+    "description": "Track and optimize your React application's performance, so you can build faster and better apps.",
+    "actions": {
+      "start": "Get Started",
+      "github": "View on GitHub"
+    }
+  }
 }
