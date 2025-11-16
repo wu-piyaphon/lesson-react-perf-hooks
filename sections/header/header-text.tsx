@@ -11,7 +11,7 @@ export default function HeaderText() {
       </h2>
       <p className="mt-3 text-2xl tracking-tight">{t("header.description")}</p>
 
-      <div className="mt-8 flex flex-row justify-center gap-2 md:justify-start">
+      <div className="z-10 mt-8 flex flex-row justify-center gap-2 md:justify-start">
         <button type="button" className="btn btn-primary min-w-24 rounded-full">
           {t("header.actions.start")}
         </button>

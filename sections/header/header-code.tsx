@@ -17,25 +17,18 @@ export default function HeaderCode() {
             react-hooks.tsx
           </div>
           <pre data-prefix="01">
-            <code>npm i daisyui</code>
+            <code>{`import { useMemo, useCallback } from 'react';`}</code>
           </pre>
-          <pre data-prefix="02">
-            <code>installing...</code>
-          </pre>
+          <pre data-prefix="02"></pre>
           <pre data-prefix="03">
-            <code>installing...</code>
+            <code>{`const memoizedValue = useMemo(() => {`}</code>
           </pre>
-          <pre data-prefix="04">
-            <code>installing...</code>
-          </pre>
+          <pre data-prefix="04">{`    return ...`}</pre>
           <pre data-prefix="05">
-            <code>installing...</code>
+            <code>{`}, [dependency]);`}</code>
           </pre>
           <pre data-prefix="06">
-            <code>installing...</code>
-          </pre>
-          <pre data-prefix="07">
-            <code>installing...</code>
+            <code></code>
           </pre>
         </div>
 
