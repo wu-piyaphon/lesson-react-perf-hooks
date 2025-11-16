@@ -1,5 +1,6 @@
 import { setRequestLocale } from "next-intl/server";
 import { use } from "react";
+import ContentSection from "@/sections/content/content-section";
 import HeaderSection from "@/sections/header/header-section";
 
 type Props = {
@@ -12,10 +13,10 @@ export default function Home({ params }: Props) {
   setRequestLocale(locale);
 
   return (
-    <main className="flex w-full flex-col overflow-hidden">
+    <main className="flex w-full flex-col">
       <HeaderSection />
 
-      <div className="h-screen"></div>
+      <ContentSection />
     </main>
   );
 }
