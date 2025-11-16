@@ -17,25 +17,14 @@
   --font-lexend: var(--font-lexend);
 }
 
+@theme {
+  --container-8xl: 88rem;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: oklch(20.8% 0.042 265.755);
     --foreground: oklch(70.4% 0.04 256.788);
-  }
-}
-
-@utility container {
-  @variant sm {
-    max-width: 640px;
-  }
-  @variant md {
-    max-width: 768px;
-  }
-  @variant lg {
-    max-width: 1024px;
-  }
-  @variant xl {
-    max-width: 1440px;
   }
 }
 
