@@ -7,6 +7,7 @@ import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import "../globals.css";
+import Navbar from "@/components/navbar/navbar";
 
 // ----------------------------------------------------------------------
 
@@ -76,7 +77,10 @@ export default async function RootLayout({ children, params }: Props) {
     <html lang="en" data-theme="night" data-theme-mode="dark">
       <body className={`${lexend.variable} ${lineSeedTH.variable} antialiased`}>
         <div className="flex w-full flex-col">
-          <NextIntlClientProvider>{children}</NextIntlClientProvider>
+          <NextIntlClientProvider>
+            <Navbar />
+            {children}
+          </NextIntlClientProvider>
         </div>
       </body>
     </html>
