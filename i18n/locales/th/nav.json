@@ -1,0 +1,24 @@
+{
+  "introduction": {
+    "title": "บทนำ",
+    "getting-started": {
+      "title": "จุดเริ่มต้น",
+      "bookmarks": {
+        "before-react": "ยุคสมัยที่ไม่มี React",
+        "before-react-challenges": "ปัญหาที่พบเจอ",
+        "basic-react": "Basic React",
+        "components": "Component-Based",
+        "hooks": "Hooks",
+        "virtual-dom": "Virtual DOM"
+      }
+    },
+    "installation": {
+      "title": "การติดตั้ง",
+      "bookmarks": {
+        "installing-dependencies": "การติดตั้ง dependencies",
+        "configuring-your-project": "การตั้งค่าโปรเจค",
+        "running-the-project": "การรันโปรเจค"
+      }
+    }
+  }
+}

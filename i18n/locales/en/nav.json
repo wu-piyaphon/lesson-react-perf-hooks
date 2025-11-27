@@ -1,0 +1,24 @@
+{
+  "introduction": {
+    "title": "Introduction",
+    "getting-started": {
+      "title": "Getting Started",
+      "bookmarks": {
+        "before-react": "Before React",
+        "before-react-challenges": "Challenges",
+        "basic-react": "Basic React",
+        "components": "Component-Based",
+        "hooks": "Hooks",
+        "virtual-dom": "Virtual DOM"
+      }
+    },
+    "installation": {
+      "title": "Installation",
+      "bookmarks": {
+        "installing-dependencies": "Installing dependencies",
+        "configuring-your-project": "Configuring your project",
+        "running-the-project": "Running the project"
+      }
+    }
+  }
+}

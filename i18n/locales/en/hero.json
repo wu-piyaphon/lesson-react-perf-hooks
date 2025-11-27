@@ -1,0 +1,8 @@
+{
+  "title": "React Tutorial",
+  "description": "Understand the basics of React and concepts to build performant applications.",
+  "actions": {
+    "start": "Get Started",
+    "github": "View on GitHub"
+  }
+}
