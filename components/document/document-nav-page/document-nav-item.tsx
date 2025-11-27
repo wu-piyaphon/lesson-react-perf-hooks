@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import type { NAV_ITEMS } from "@/constants/nav.constant";
+import type { getNavItems } from "@/constants/nav.constant";
 import { usePathname } from "@/i18n/navigation";
 import { cn } from "@/lib/cn";
 
@@ -9,7 +9,7 @@ import { cn } from "@/lib/cn";
 
 type Props = {
   title: string;
-  items: (typeof NAV_ITEMS)[number]["docs"];
+  items: ReturnType<typeof getNavItems>[number]["docs"];
 };
 
 // ----------------------------------------------------------------------
@@ -21,7 +21,7 @@ export default function DocumentNavItem({ title, items }: Props) {
 
   return (
     <li>
-      <h2 className="font-medium text-white">{title}</h2>
+      <h6 className="font-medium text-white">{title}</h6>
       <ul className="mt-2 space-y-2 border-slate-100 border-l-2 lg:mt-4 lg:space-y-4 lg:border-slate-200 dark:border-slate-800">
         {items.map((item) => (
           <li key={item.title} className="relative">

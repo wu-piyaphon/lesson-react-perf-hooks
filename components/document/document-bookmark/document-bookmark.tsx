@@ -1,13 +1,18 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { useCallback, useEffect, useState } from "react";
+import { getNavItems } from "@/constants/nav.constant";
 import { usePathname } from "@/i18n/navigation";
 import { findBookmarks, isElementActive, scrollToElement } from "@/utils";
 import DocumentBookmarkLink from "./document-bookmark-link";
 
 export default function DocumentBookmark() {
+  const t = useTranslations("nav");
   const pathname = usePathname();
-  const bookmarks = findBookmarks(pathname);
+
+  const navItems = getNavItems(t);
+  const bookmarks = findBookmarks(navItems, pathname);
 
   const [activeParentHref, setActiveParentHref] = useState<string | null>(null);
   const [activeChildHref, setActiveChildHref] = useState<string | null>(null);
@@ -61,7 +66,7 @@ export default function DocumentBookmark() {
   return (
     <div className="relative hidden xl:block">
       <nav className="sticky top-19 w-56 py-16 xl:pr-6">
-        <h2 className="font-medium text-sm text-white">On this page</h2>
+        <h6 className="font-medium text-sm text-white">On this page</h6>
         <ol className="mt-4 space-y-3 text-sm">
           {bookmarks.map((parent) => (
             <li key={parent.title}>

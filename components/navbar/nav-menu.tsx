@@ -1,8 +1,9 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
-import { NAV_ITEMS } from "@/constants/nav.constant";
+import { getNavItems } from "@/constants/nav.constant";
 import { cn } from "@/lib/cn";
 import DocumentNavItem from "../document/document-nav-page/document-nav-item";
 import NavLogo from "./nav-logo";
@@ -17,6 +18,9 @@ type Props = {
 // ----------------------------------------------------------------------
 
 export default function NavMenu({ open, onToggleMenu }: Props) {
+  const t = useTranslations("nav");
+
+  const navItems = getNavItems(t);
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -47,7 +51,7 @@ export default function NavMenu({ open, onToggleMenu }: Props) {
 
           <nav className="mt-5 px-1 text-base lg:text-sm">
             <ul className="space-y-9">
-              {NAV_ITEMS.map((item) => (
+              {navItems.map((item) => (
                 <DocumentNavItem
                   key={item.title}
                   title={item.title}
